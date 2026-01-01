@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RespectPhono.Catalog</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+        content="RespectPhono is a modern HTML5 template for vinyl record stores, music shops, and audio marketplaces. Clean, responsive design with product catalog, product pages, shopping cart, and checkout layout. Perfect for record collectors, music brands, and eCommerce projects.">
+
+    <meta name="keywords"
+        content="vinyl record store html template, music shop html template, record store website, vinyl shop ecommerce, audio store html, music ecommerce template, html5 shop template, responsive music store">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;600;700;800;900&family=Barlow:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header>
+    <div id="mobile-menu">
+        <span class="close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"/>
+            </svg>
+        </span>
+
+        <div class="mobile-menu-body">
+            <ul class="menu">
+                <li><a href="#">Cartridges</a></li>
+                <li><a href="#">Tonearms</a></li>
+                <li><a href="#">Turntables</a></li>
+                <li><a href="#">Phono Preamplifier</a></li>
+                <li><a href="#">Replacement Styluses</a></li>
+                <li><a href="#">Belts</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">HiFi</a></li>
+            </ul>
+
+            <ul class="header__list">
+                <li class="account"><a href="#">
+                <span class="icon">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.375 0.25C10.07 0.25 8.8175 0.8575 8 1.8175C7.1825 0.8575 5.93 0.25 4.625 0.25C2.315 0.25 0.5 2.065 0.5 4.375C0.5 7.21 3.05 9.52 6.9125 13.03L8 14.0125L9.0875 13.0225C12.95 9.52 15.5 7.21 15.5 4.375C15.5 2.065 13.685 0.25 11.375 0.25ZM8.075 11.9125L8 11.9875L7.925 11.9125C4.355 8.68 2 6.5425 2 4.375C2 2.875 3.125 1.75 4.625 1.75C5.78 1.75 6.905 2.4925 7.3025 3.52H8.705C9.095 2.4925 10.22 1.75 11.375 1.75C12.875 1.75 14 2.875 14 4.375C14 6.5425 11.645 8.68 8.075 11.9125Z"/>
+                    </svg>
+                </span>
+                    <p>Wishlist</p>
+                </a></li>
+                <li class="account"><a href="#">
+				<span class="icon">
+					<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.75 4C10.75 6.07106 9.07107 7.75 7 7.75C4.92893 7.75 3.25 6.07106 3.25 4C3.25 1.92894 4.92893 0.25 7 0.25C9.07107 0.25 10.75 1.92894 10.75 4ZM9.25 4C9.25 5.24265 8.24265 6.25 7 6.25C5.75735 6.25 4.75 5.24265 4.75 4C4.75 2.75735 5.75735 1.75 7 1.75C8.24265 1.75 9.25 2.75735 9.25 4Z"/>
+                    <path d="M1.75 12.25C1.75 11.9407 2.06448 11.3829 3.0813 10.8524C4.03767 10.3535 5.41562 10 7 10C8.58438 10 9.96233 10.3535 10.9187 10.8524C11.9355 11.3829 12.25 11.9407 12.25 12.25V13.75H13.75V12.25C13.75 11.0593 12.752 10.1171 11.6126 9.52255C10.4127 8.89654 8.79062 8.5 7 8.5C5.20938 8.5 3.58734 8.89654 2.38745 9.52255C1.24802 10.1171 0.25 11.0593 0.25 12.25V13.75H1.75V12.25Z"/>
+                    </svg>
+				</span>
+                    <p>Account</p>
+                </a></li>
+                <li class="language">
+                    <a href="#" class="btn-default">EN</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Ru</a></li>
+                        <li><a href="#">Ua</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <a href="#" class="links-modal">Restored Vintage Turntables</a>
+        </div>
+    </div>
+
+    <div class="header__top">
+        <div class="container">
+            <div class="btn-accent btn-mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt="RespectPhono vinyl record store logo"></a>
+
+            <span class="btn-mobile-search">
+                <img src="img/search.svg" alt="Vinyl record album cover">
+            </span>
+            <form method="post" class="form form-search">
+                <input type="text" name="search" placeholder="Search" required>
+                <button type="submit"><img src="img/search.svg" alt="Vinyl record album cover"></button>
+            </form>
+
+            <ul class="header__list">
+                <li class="account"><a href="#">
+                <span class="icon">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.375 0.25C10.07 0.25 8.8175 0.8575 8 1.8175C7.1825 0.8575 5.93 0.25 4.625 0.25C2.315 0.25 0.5 2.065 0.5 4.375C0.5 7.21 3.05 9.52 6.9125 13.03L8 14.0125L9.0875 13.0225C12.95 9.52 15.5 7.21 15.5 4.375C15.5 2.065 13.685 0.25 11.375 0.25ZM8.075 11.9125L8 11.9875L7.925 11.9125C4.355 8.68 2 6.5425 2 4.375C2 2.875 3.125 1.75 4.625 1.75C5.78 1.75 6.905 2.4925 7.3025 3.52H8.705C9.095 2.4925 10.22 1.75 11.375 1.75C12.875 1.75 14 2.875 14 4.375C14 6.5425 11.645 8.68 8.075 11.9125Z"/>
+                    </svg>
+                </span>
+                    <p>Wishlist</p>
+                </a></li>
+                <li class="account"><a href="#">
+				<span class="icon">
+					<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.75 4C10.75 6.07106 9.07107 7.75 7 7.75C4.92893 7.75 3.25 6.07106 3.25 4C3.25 1.92894 4.92893 0.25 7 0.25C9.07107 0.25 10.75 1.92894 10.75 4ZM9.25 4C9.25 5.24265 8.24265 6.25 7 6.25C5.75735 6.25 4.75 5.24265 4.75 4C4.75 2.75735 5.75735 1.75 7 1.75C8.24265 1.75 9.25 2.75735 9.25 4Z"/>
+                    <path d="M1.75 12.25C1.75 11.9407 2.06448 11.3829 3.0813 10.8524C4.03767 10.3535 5.41562 10 7 10C8.58438 10 9.96233 10.3535 10.9187 10.8524C11.9355 11.3829 12.25 11.9407 12.25 12.25V13.75H13.75V12.25C13.75 11.0593 12.752 10.1171 11.6126 9.52255C10.4127 8.89654 8.79062 8.5 7 8.5C5.20938 8.5 3.58734 8.89654 2.38745 9.52255C1.24802 10.1171 0.25 11.0593 0.25 12.25V13.75H1.75V12.25Z"/>
+                    </svg>
+				</span>
+                    <p>Account</p>
+                </a></li>
+                <li class="language">
+                    <a href="#" class="btn-default">EN</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Ru</a></li>
+                        <li><a href="#">Ua</a></li>
+                    </ul>
+                </li>
+                <li class="cart btn-grey btn-cart">
+                    <a href="#">
+                    <span class="icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.57883 2C1.92298 2 2.22298 2.23421 2.30644 2.56811L4.25819 10.3751C4.35001 10.7423 4.67999 11 5.05856 11H12.4459C12.801 11 13.1163 10.7728 13.2286 10.4359L15.4286 3.83588C15.6067 3.30167 15.209 2.75 14.6459 2.75H3.89808L3.61964 1.63619C3.45269 0.968452 2.85272 0.5 2.16442 0.5H1.25C0.835781 0.5 0.5 0.835793 0.5 1.25C0.5 1.66421 0.835781 2 1.25 2H1.57883ZM5.58558 9.5L4.27308 4.25H13.7094L11.9594 9.5H5.58558Z"
+                              fill="white"/>
+                        <path d="M6.5 14C6.5 14.8284 5.82843 15.5 5 15.5C4.17157 15.5 3.5 14.8284 3.5 14C3.5 13.1716 4.17157 12.5 5 12.5C5.82843 12.5 6.5 13.1716 6.5 14Z"
+                              fill="white"/>
+                        <path d="M14 14C14 14.8284 13.3284 15.5 12.5 15.5C11.6716 15.5 11 14.8284 11 14C11 13.1716 11.6716 12.5 12.5 12.5C13.3284 12.5 14 13.1716 14 14Z"
+                              fill="white"/>
+                        </svg>
+                    </span>
+                        <p>Cart</p>
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+
+    <div class="header__menu">
+        <div class="container">
+
+            <ul class="menu">
+                <li><a href="#">Cartridges</a></li>
+                <li><a href="#">Tonearms</a></li>
+                <li>
+                    <a href="#">Turntables</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Turntables One</a></li>
+                        <li><a href="#">Turntables Two</a></li>
+                        <li><a href="#">Turntables Three</a></li>
+                        <li><a href="#">Turntables Four</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Phono Preamplifier</a></li>
+                <li><a href="#">Replacement Styluses</a></li>
+                <li><a href="#">Belts</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">HiFi</a></li>
+            </ul>
+
+            <a href="#" class="links-modal">Restored Vintage Turntables</a>
+        </div>
+    </div>
+</header>
+
+<div class="content">
+
+
+
+    <section class="page-content">
+        <div class="container">
+
+            <div class="breadcrumbs-wrapper">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="index.html">Home
+                            <span class="icon"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10.59L4.58 6L0 1.41L1.41 0L7.41 6L1.41 12L0 10.59Z" fill="#454D52"/>
+</svg></span>
+                        </a>
+                    </li>
+                    <li><span>Cartridges</span></li>
+                </ul>
+            </div>
+
+            <h2>Cartridges</h2>
+
+            <div class="page-content__wrapper">
+                <div class="sidebar">
+
+                    <div class="box filter-box">
+                        <h3>Brands</h3>
+
+                        <div class="filter-box__brands">
+                            <ul class="list-brands">
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Audio-Technica</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Goldring</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Ortofon</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Brandname</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Brandname</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Audio-Technica</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Goldring</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Ortofon</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Brandname</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Brandname</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">Audio-Technica</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box filter-box">
+                        <h3>Price</h3>
+
+                        <div class="slider-range"></div>
+
+                        <div class="range_val">
+                            <div class="inp-group">
+                                <input type="text" name="dec" class="dec1">
+                                <input type="text" name="dec" class="dec2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__wrapper">
+
+                    <div class="catalog__wrapper-top">
+                        <div class="line-sorting">
+                            <p>Sort by: </p>
+
+                            <div class="btn-dropdown select-group">
+                                <div class="box-active">
+                                    Price
+                                    <span class="arrow"><img src="img/arrow-select.svg" alt="Vinyl record album cover"></span>
+                                </div>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Name</a></li>
+                                    <li><a href="#">Sale</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="catalog__wrapper-bottom">
+                        <div class="card catalog-card">
+                            <span class="icon-favorites">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.375 0.25C10.07 0.25 8.8175 0.8575 8 1.8175C7.1825 0.8575 5.93 0.25 4.625 0.25C2.315 0.25 0.5 2.065 0.5 4.375C0.5 7.21 3.05 9.52 6.9125 13.03L8 14.0125L9.0875 13.0225C12.95 9.52 15.5 7.21 15.5 4.375C15.5 2.065 13.685 0.25 11.375 0.25ZM8.075 11.9125L8 11.9875L7.925 11.9125C4.355 8.68 2 6.5425 2 4.375C2 2.875 3.125 1.75 4.625 1.75C5.78 1.75 6.905 2.4925 7.3025 3.52H8.705C9.095 2.4925 10.22 1.75 11.375 1.75C12.875 1.75 14 2.875 14 4.375C14 6.5425 11.645 8.68 8.075 11.9125Z"
+                                      fill="#65767C"/>
+                                </svg>
+                            </span>
+
+                            <a href="#" class="image">
+                                <img src="img/prod9.png" alt="Vinyl record album cover">
+                            </a>
+                            <a href="#" class="title">
+                                Audio-Technica AT-MONO3/LP
+                            </a>
+
+                            <div class="box-stock in-stock">
+                                <div class="icon-check">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.00006 7.8L1.20006 5L0.266724 5.93334L4.00006 9.66667L12.0001 1.66667L11.0667 0.733337L4.00006 7.8Z"
+                                              fill="#30353B"/>
+                                    </svg>
+                                </div>
+                                <p>In Stock</p>
+                            </div>
+
+                            <div class="card__bottom">
+                                <div class="price">
+                                    <div class="new-price">249.00€</div>
+                                </div>
+                                <a href="#" class="cart">
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M1.57883 2C1.92298 2 2.22298 2.23421 2.30644 2.56811L4.25819 10.3751C4.35001 10.7423 4.67999 11 5.05856 11H12.4459C12.801 11 13.1163 10.7728 13.2286 10.4359L15.4286 3.83588C15.6067 3.30167 15.209 2.75 14.6459 2.75H3.89808L3.61964 1.63619C3.45269 0.968452 2.85272 0.5 2.16442 0.5H1.25C0.835781 0.5 0.5 0.835793 0.5 1.25C0.5 1.66421 0.835781 2 1.25 2H1.57883ZM5.58558 9.5L4.27308 4.25H13.7094L11.9594 9.5H5.58558Z"/>
+                                <path d="M6.5 14C6.5 14.8284 5.82843 15.5 5 15.5C4.17157 15.5 3.5 14.8284 3.5 14C3.5 13.1716 4.17157 12.5 5 12.5C5.82843 12.5 6.5 13.1716 6.5 14Z"/>
+                                <path d="M14 14C14 14.8284 13.3284 15.5 12.5 15.5C11.6716 15.5 11 14.8284 11 14C11 13.1716 11.6716 12.5 12.5 12.5C13.3284 12.5 14 13.1716 14 14Z"/>
+                            </svg>
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card catalog-card">
+                            <span class="icon-favorites">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.375 0.25C10.07 0.25 8.8175 0.8575 8 1.8175C7.1825 0.8575 5.93 0.25 4.625 0.25C2.315 0.25 0.5 2.065 0.5 4.375C0.5 7.21 3.05 9.52 6.9125 13.03L8 14.0125L9.0875 13.0225C12.95 9.52 15.5 7.21 15.5 4.375C15.5 2.065 13.685 0.25 11.375 0.25ZM8.075 11.9125L8 11.9875L7.925 11.9125C4.355 8.68 2 6.5425 2 4.375C2 2.875 3.125 1.75 4.625 1.75C5.78 1.75 6.905 2.4925 7.3025 3.52H8.705C9.095 2.4925 10.22 1.75 11.375 1.75C12.875 1.75 14 2.875 14 4.375C14 6.5425 11.645 8.68 8.075 11.9125Z"
+                                      fill="#65767C"/>
+                                </svg>
+                            </span>
+                            <span class="box-new">new</span>
+
+                            <a href="#" class="image">
+                                <img src="img/prod2.png" alt="Vinyl record album cover">
+                            </a>
+                            <a href="#" class="title">
+                                Ortofon 2M Black PnP (with Headshell)
+                            </a>
+
+                            <div class="box-stock in-stock">
+                                <div class="icon-check">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.00006 7.8L1.20006 5L0.266724 5.93334L4.00006 9.66667L12.0001 1.66667L11.0667 0.733337L4.00006 7.8Z"
+                                              fill="#30353B"/>
+                                    </svg>
+                                </div>
+                                <p>In Stock</p>
+                            </div>
+
+                            <div class="card__bottom">
+                                <div class="price">
+                                    <div class="new-price">249.00€</div>
+                                </div>
+                                <a href="#" class="cart">
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M1.57883 2C1.92298 2 2.22298 2.23421 2.30644 2.56811L4.25819 10.3751C4.35001 10.7423 4.67999 11 5.05856 11H12.4459C12.801 11 13.1163 10.7728 13.2286 10.4359L15.4286 3.83588C15.6067 3.30167 15.209 2.75 14.6459 2.75H3.89808L3.61964 1.63619C3.45269 0.968452 2.85272 0.5 2.16442 0.5H1.25C0.835781 0.5 0.5 0.835793 0.5 1.25C0.5 1.66421 0.835781 2 1.25 2H1.57883ZM5.58558 9.5L4.27308 4.25H13.7094L11.9594 9.5H5.58558Z"/>
+                                <path d="M6.5 14C6.5 14.8284 5.82843 15.5 5 15.5C4.17157 15.5 3.5 14.8284 3.5 14C3.5 13.1716 4.17157 12.5 5 12.5C5.82843 12.5 6.5 13.1716 6.5 14Z"/>
+                                <path d="M14 14C14 14.8284 13.3284 15.5 12.5 15.5C11.6716 15.5 11 14.8284 11 14C11 13.1716 11.6716 12.5 12.5 12.5C13.3284 12.5 14 13.1716 14 14Z"/>
+                            </svg>
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card catalog-card">
+                            <span class="icon-favorites">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.375 0.25C10.07 0.25 8.8175 0.8575 8 1.8175C7.1825 0.8575 5.93 0.25 4.625 0.25C2.315 0.25 0.5 2.065 0.5 4.375C0.5 7.21 3.05 9.52 6.9125 13.03L8 14.0125L9.0875 13.0225C12.95 9.52 15.5 7.21 15.5 4.375C15.5 2.065 13.685 0.25 11.375 0.25ZM8.075 11.9125L8 11.9875L7.925 11.9125C4.355 8.68 2 6.5425 2 4.375C2 2.875 3.125 1.75 4.625 1.75C5.78 1.75 6.905 2.4925 7.3025 3.52H8.705C9.095 2.4925 10.22 1.75 11.375 1.75C12.875 1.75 14 2.875 14 4.375C14 6.5425 11.645 8.68 8.075 11.9125Z"
+                                      fill="#65767C"/>
+                                </svg>
+                            </span>
+                            <span class="box-sale">sale</span>
+
+                            <a href="#" class="image">
+                                <img src="img/prod8.png" alt="Vinyl record album cover">
+                            </a>
+                            <a href="#" class="title">
+                                Goldring 2200 MM-Cartridge
+                            </a>
+
+                            <div class="box-stock box-expected">
+                                <div class="icon-check">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.00006 7.8L1.20006 5L0.266724 5.93334L4.00006 9.66667L12.0001 1.66667L11.0667 0.733337L4.00006 7.8Z"
+                                              fill="#30353B"/>
+                                    </svg>
+                                </div>
+                                <p>Will be shipped in 3-6 days</p>
+                            </div>
+
+                            <div class="card__bottom">
+                                <div class="price">
+                                    <div class="new-price">249.00€</div>
+                                </div>
+                                <a href="#" class="cart">
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M1.57883 2C1.92298 2 2.22298 2.23421 2.30644 2.56811L4.25819 10.3751C4.35001 10.7423 4.67999 11 5.05856 11H12.4459C12.801 11 13.1163 10.7728 13.2286 10.4359L15.4286 3.83588C15.6067 3.30167 15.209 2.75 14.6459 2.75H3.89808L3.61964 1.63619C3.45269 0.968452 2.85272 0.5 2.16442 0.5H1.25C0.835781 0.5 0.5 0.835793 0.5 1.25C0.5 1.66421 0.835781 2 1.25 2H1.57883ZM5.58558 9.5L4.27308 4.25H13.7094L11.9594 9.5H5.58558Z"/>
+                                <path d="M6.5 14C6.5 14.8284 5.82843 15.5 5 15.5C4.17157 15.5 3.5 14.8284 3.5 14C3.5 13.1716 4.17157 12.5 5 12.5C5.82843 12.5 6.5 13.1716 6.5 14Z"/>
+                                <path d="M14 14C14 14.8284 13.3284 15.5 12.5 15.5C11.6716 15.5 11 14.8284 11 14C11 13.1716 11.6716 12.5 12.5 12.5C13.3284 12.5 14 13.1716 14 14Z"/>
+                            </svg>
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card catalog-card">
+                            <span class="icon-favorites">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.375 0.25C10.07 0.25 8.8175 0.8575 8 1.8175C7.1825 0.8575 5.93 0.25 4.625 0.25C2.315 0.25 0.5 2.065 0.5 4.375C0.5 7.21 3.05 9.52 6.9125 13.03L8 14.0125L9.0875 13.0225C12.95 9.52 15.5 7.21 15.5 4.375C15.5 2.065 13.685 0.25 11.375 0.25ZM8.075 11.9125L8 11.9875L7.925 11.9125C4.355 8.68 2 6.5425 2 4.375C2 2.875 3.125 1.75 4.625 1.75C5.78 1.75 6.905 2.4925 7.3025 3.52H8.705C9.095 2.4925 10.22 1.75 11.375 1.75C12.875 1.75 14 2.875 14 4.375C14 6.5425 11.645 8.68 8.075 11.9125Z"
+                                      fill="#65767C"/>
+                                </svg>
+                            </span>
+
+                            <a href="#" class="image">
+                                <img src="img/prod10.png" alt="Vinyl record album cover">
+                            </a>
+                            <a href="#" class="title">
+                                Audio-Technica AT-MONO3/LP
+                            </a>
+
+                            <div class="box-stock in-stock">
+                                <div class="icon-check">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.00006 7.8L1.20006 5L0.266724 5.93334L4.00006 9.66667L12.0001 1.66667L11.0667 0.733337L4.00006 7.8Z"
+                                              fill="#30353B"/>
+                                    </svg>
+                                </div>
+                                <p>In Stock</p>
+                            </div>
+
+                            <div class="card__bottom">
+                                <div class="price">
+                                    <div class="new-price">249.00€</div>
+                                </div>
+                                <a href="#" class="cart">
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M1.57883 2C1.92298 2 2.22298 2.23421 2.30644 2.56811L4.25819 10.3751C4.35001 10.7423 4.67999 11 5.05856 11H12.4459C12.801 11 13.1163 10.7728 13.2286 10.4359L15.4286 3.83588C15.6067 3.30167 15.209 2.75 14.6459 2.75H3.89808L3.61964 1.63619C3.45269 0.968452 2.85272 0.5 2.16442 0.5H1.25C0.835781 0.5 0.5 0.835793 0.5 1.25C0.5 1.66421 0.835781 2 1.25 2H1.57883ZM5.58558 9.5L4.27308 4.25H13.7094L11.9594 9.5H5.58558Z"/>
+                                <path d="M6.5 14C6.5 14.8284 5.82843 15.5 5 15.5C4.17157 15.5 3.5 14.8284 3.5 14C3.5 13.1716 4.17157 12.5 5 12.5C5.82843 12.5 6.5 13.1716 6.5 14Z"/>
+                                <path d="M14 14C14 14.8284 13.3284 15.5 12.5 15.5C11.6716 15.5 11 14.8284 11 14C11 13.1716 11.6716 12.5 12.5 12.5C13.3284 12.5 14 13.1716 14 14Z"/>
+                            </svg>
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card catalog-card">
+                            <span class="icon-favorites">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.375 0.25C10.07 0.25 8.8175 0.8575 8 1.8175C7.1825 0.8575 5.93 0.25 4.625 0.25C2.315 0.25 0.5 2.065 0.5 4.375C0.5 7.21 3.05 9.52 6.9125 13.03L8 14.0125L9.0875 13.0225C12.95 9.52 15.5 7.21 15.5 4.375C15.5 2.065 13.685 0.25 11.375 0.25ZM8.075 11.9125L8 11.9875L7.925 11.9125C4.355 8.68 2 6.5425 2 4.375C2 2.875 3.125 1.75 4.625 1.75C5.78 1.75 6.905 2.4925 7.3025 3.52H8.705C9.095 2.4925 10.22 1.75 11.375 1.75C12.875 1.75 14 2.875 14 4.375C14 6.5425 11.645 8.68 8.075 11.9125Z"
+                                      fill="#65767C"/>
+                                </svg>
+                            </span>
+
+                            <a href="#" class="image">
+                                <img src="img/prod9.png" alt="Vinyl record album cover">
+                            </a>
+                            <a href="#" class="title">
+                                Ortofon 2M Black PnP (with Headshell)
+                            </a>
+
+                            <div class="box-stock in-stock">
+                                <div class="icon-check">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.00006 7.8L1.20006 5L0.266724 5.93334L4.00006 9.66667L12.0001 1.66667L11.0667 0.733337L4.00006 7.8Z"
+                                              fill="#30353B"/>
+                                    </svg>
+                                </div>
+                                <p>In Stock</p>
+                            </div>
+
+                            <div class="card__bottom">
+                                <div class="price">
+                                    <div class="new-price">249.00€</div>
+                                </div>
+                                <a href="#" class="cart">
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M1.57883 2C1.92298 2 2.22298 2.23421 2.30644 2.56811L4.25819 10.3751C4.35001 10.7423 4.67999 11 5.05856 11H12.4459C12.801 11 13.1163 10.7728 13.2286 10.4359L15.4286 3.83588C15.6067 3.30167 15.209 2.75 14.6459 2.75H3.89808L3.61964 1.63619C3.45269 0.968452 2.85272 0.5 2.16442 0.5H1.25C0.835781 0.5 0.5 0.835793 0.5 1.25C0.5 1.66421 0.835781 2 1.25 2H1.57883ZM5.58558 9.5L4.27308 4.25H13.7094L11.9594 9.5H5.58558Z"/>
+                                <path d="M6.5 14C6.5 14.8284 5.82843 15.5 5 15.5C4.17157 15.5 3.5 14.8284 3.5 14C3.5 13.1716 4.17157 12.5 5 12.5C5.82843 12.5 6.5 13.1716 6.5 14Z"/>
+                                <path d="M14 14C14 14.8284 13.3284 15.5 12.5 15.5C11.6716 15.5 11 14.8284 11 14C11 13.1716 11.6716 12.5 12.5 12.5C13.3284 12.5 14 13.1716 14 14Z"/>
+                            </svg>
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card catalog-card">
+                            <span class="icon-favorites">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.375 0.25C10.07 0.25 8.8175 0.8575 8 1.8175C7.1825 0.8575 5.93 0.25 4.625 0.25C2.315 0.25 0.5 2.065 0.5 4.375C0.5 7.21 3.05 9.52 6.9125 13.03L8 14.0125L9.0875 13.0225C12.95 9.52 15.5 7.21 15.5 4.375C15.5 2.065 13.685 0.25 11.375 0.25ZM8.075 11.9125L8 11.9875L7.925 11.9125C4.355 8.68 2 6.5425 2 4.375C2 2.875 3.125 1.75 4.625 1.75C5.78 1.75 6.905 2.4925 7.3025 3.52H8.705C9.095 2.4925 10.22 1.75 11.375 1.75C12.875 1.75 14 2.875 14 4.375C14 6.5425 11.645 8.68 8.075 11.9125Z"
+                                      fill="#65767C"/>
+                                </svg>
+                            </span>
+
+                            <a href="#" class="image">
+                                <img src="img/prod11.png" alt="Vinyl record album cover">
+                            </a>
+                            <a href="#" class="title">
+                                Goldring 2200 MM-Cartridge
+                            </a>
+
+                            <div class="box-stock in-stock">
+                                <div class="icon-check">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.00006 7.8L1.20006 5L0.266724 5.93334L4.00006 9.66667L12.0001 1.66667L11.0667 0.733337L4.00006 7.8Z"
+                                              fill="#30353B"/>
+                                    </svg>
+                                </div>
+                                <p>In Stock</p>
+                            </div>
+
+                            <div class="card__bottom">
+                                <div class="price">
+                                    <div class="new-price">249.00€</div>
+                                </div>
+                                <a href="#" class="cart">
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M1.57883 2C1.92298 2 2.22298 2.23421 2.30644 2.56811L4.25819 10.3751C4.35001 10.7423 4.67999 11 5.05856 11H12.4459C12.801 11 13.1163 10.7728 13.2286 10.4359L15.4286 3.83588C15.6067 3.30167 15.209 2.75 14.6459 2.75H3.89808L3.61964 1.63619C3.45269 0.968452 2.85272 0.5 2.16442 0.5H1.25C0.835781 0.5 0.5 0.835793 0.5 1.25C0.5 1.66421 0.835781 2 1.25 2H1.57883ZM5.58558 9.5L4.27308 4.25H13.7094L11.9594 9.5H5.58558Z"/>
+                                <path d="M6.5 14C6.5 14.8284 5.82843 15.5 5 15.5C4.17157 15.5 3.5 14.8284 3.5 14C3.5 13.1716 4.17157 12.5 5 12.5C5.82843 12.5 6.5 13.1716 6.5 14Z"/>
+                                <path d="M14 14C14 14.8284 13.3284 15.5 12.5 15.5C11.6716 15.5 11 14.8284 11 14C11 13.1716 11.6716 12.5 12.5 12.5C13.3284 12.5 14 13.1716 14 14Z"/>
+                            </svg>
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card catalog-card">
+                            <span class="icon-favorites">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.375 0.25C10.07 0.25 8.8175 0.8575 8 1.8175C7.1825 0.8575 5.93 0.25 4.625 0.25C2.315 0.25 0.5 2.065 0.5 4.375C0.5 7.21 3.05 9.52 6.9125 13.03L8 14.0125L9.0875 13.0225C12.95 9.52 15.5 7.21 15.5 4.375C15.5 2.065 13.685 0.25 11.375 0.25ZM8.075 11.9125L8 11.9875L7.925 11.9125C4.355 8.68 2 6.5425 2 4.375C2 2.875 3.125 1.75 4.625 1.75C5.78 1.75 6.905 2.4925 7.3025 3.52H8.705C9.095 2.4925 10.22 1.75 11.375 1.75C12.875 1.75 14 2.875 14 4.375C14 6.5425 11.645 8.68 8.075 11.9125Z"
+                                      fill="#65767C"/>
+                                </svg>
+                            </span>
+
+                            <a href="#" class="image">
+                                <img src="img/prod6.png" alt="Vinyl record album cover">
+                            </a>
+                            <a href="#" class="title">
+                                Audio-Technica AT-MONO3/LP
+                            </a>
+
+                            <div class="box-stock in-stock">
+                                <div class="icon-check">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.00006 7.8L1.20006 5L0.266724 5.93334L4.00006 9.66667L12.0001 1.66667L11.0667 0.733337L4.00006 7.8Z"
+                                              fill="#30353B"/>
+                                    </svg>
+                                </div>
+                                <p>In Stock</p>
+                            </div>
+
+                            <div class="card__bottom">
+                                <div class="price">
+                                    <div class="new-price">249.00€</div>
+                                </div>
+                                <a href="#" class="cart">
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M1.57883 2C1.92298 2 2.22298 2.23421 2.30644 2.56811L4.25819 10.3751C4.35001 10.7423 4.67999 11 5.05856 11H12.4459C12.801 11 13.1163 10.7728 13.2286 10.4359L15.4286 3.83588C15.6067 3.30167 15.209 2.75 14.6459 2.75H3.89808L3.61964 1.63619C3.45269 0.968452 2.85272 0.5 2.16442 0.5H1.25C0.835781 0.5 0.5 0.835793 0.5 1.25C0.5 1.66421 0.835781 2 1.25 2H1.57883ZM5.58558 9.5L4.27308 4.25H13.7094L11.9594 9.5H5.58558Z"/>
+                                <path d="M6.5 14C6.5 14.8284 5.82843 15.5 5 15.5C4.17157 15.5 3.5 14.8284 3.5 14C3.5 13.1716 4.17157 12.5 5 12.5C5.82843 12.5 6.5 13.1716 6.5 14Z"/>
+                                <path d="M14 14C14 14.8284 13.3284 15.5 12.5 15.5C11.6716 15.5 11 14.8284 11 14C11 13.1716 11.6716 12.5 12.5 12.5C13.3284 12.5 14 13.1716 14 14Z"/>
+                            </svg>
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card catalog-card">
+                            <span class="icon-favorites">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.375 0.25C10.07 0.25 8.8175 0.8575 8 1.8175C7.1825 0.8575 5.93 0.25 4.625 0.25C2.315 0.25 0.5 2.065 0.5 4.375C0.5 7.21 3.05 9.52 6.9125 13.03L8 14.0125L9.0875 13.0225C12.95 9.52 15.5 7.21 15.5 4.375C15.5 2.065 13.685 0.25 11.375 0.25ZM8.075 11.9125L8 11.9875L7.925 11.9125C4.355 8.68 2 6.5425 2 4.375C2 2.875 3.125 1.75 4.625 1.75C5.78 1.75 6.905 2.4925 7.3025 3.52H8.705C9.095 2.4925 10.22 1.75 11.375 1.75C12.875 1.75 14 2.875 14 4.375C14 6.5425 11.645 8.68 8.075 11.9125Z"
+                                      fill="#65767C"/>
+                                </svg>
+                            </span>
+
+                            <a href="#" class="image">
+                                <img src="img/prod12.png" alt="Vinyl record album cover">
+                            </a>
+                            <a href="#" class="title">
+                                Ortofon 2M Black PnP (with Headshell)
+                            </a>
+
+                            <div class="box-stock in-stock">
+                                <div class="icon-check">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.00006 7.8L1.20006 5L0.266724 5.93334L4.00006 9.66667L12.0001 1.66667L11.0667 0.733337L4.00006 7.8Z"
+                                              fill="#30353B"/>
+                                    </svg>
+                                </div>
+                                <p>In Stock</p>
+                            </div>
+
+                            <div class="card__bottom">
+                                <div class="price">
+                                    <div class="new-price">249.00€</div>
+                                </div>
+                                <a href="#" class="cart">
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M1.57883 2C1.92298 2 2.22298 2.23421 2.30644 2.56811L4.25819 10.3751C4.35001 10.7423 4.67999 11 5.05856 11H12.4459C12.801 11 13.1163 10.7728 13.2286 10.4359L15.4286 3.83588C15.6067 3.30167 15.209 2.75 14.6459 2.75H3.89808L3.61964 1.63619C3.45269 0.968452 2.85272 0.5 2.16442 0.5H1.25C0.835781 0.5 0.5 0.835793 0.5 1.25C0.5 1.66421 0.835781 2 1.25 2H1.57883ZM5.58558 9.5L4.27308 4.25H13.7094L11.9594 9.5H5.58558Z"/>
+                                <path d="M6.5 14C6.5 14.8284 5.82843 15.5 5 15.5C4.17157 15.5 3.5 14.8284 3.5 14C3.5 13.1716 4.17157 12.5 5 12.5C5.82843 12.5 6.5 13.1716 6.5 14Z"/>
+                                <path d="M14 14C14 14.8284 13.3284 15.5 12.5 15.5C11.6716 15.5 11 14.8284 11 14C11 13.1716 11.6716 12.5 12.5 12.5C13.3284 12.5 14 13.1716 14 14Z"/>
+                            </svg>
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card catalog-card">
+                            <span class="icon-favorites">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.375 0.25C10.07 0.25 8.8175 0.8575 8 1.8175C7.1825 0.8575 5.93 0.25 4.625 0.25C2.315 0.25 0.5 2.065 0.5 4.375C0.5 7.21 3.05 9.52 6.9125 13.03L8 14.0125L9.0875 13.0225C12.95 9.52 15.5 7.21 15.5 4.375C15.5 2.065 13.685 0.25 11.375 0.25ZM8.075 11.9125L8 11.9875L7.925 11.9125C4.355 8.68 2 6.5425 2 4.375C2 2.875 3.125 1.75 4.625 1.75C5.78 1.75 6.905 2.4925 7.3025 3.52H8.705C9.095 2.4925 10.22 1.75 11.375 1.75C12.875 1.75 14 2.875 14 4.375C14 6.5425 11.645 8.68 8.075 11.9125Z"
+                                      fill="#65767C"/>
+                                </svg>
+                            </span>
+
+                            <a href="#" class="image">
+                                <img src="img/prod13.png" alt="Vinyl record album cover">
+                            </a>
+                            <a href="#" class="title">
+                                Goldring 2200 MM-Cartridge
+                            </a>
+
+                            <div class="box-stock in-stock">
+                                <div class="icon-check">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.00006 7.8L1.20006 5L0.266724 5.93334L4.00006 9.66667L12.0001 1.66667L11.0667 0.733337L4.00006 7.8Z"
+                                              fill="#30353B"/>
+                                    </svg>
+                                </div>
+                                <p>In Stock</p>
+                            </div>
+
+                            <div class="card__bottom">
+                                <div class="price">
+                                    <div class="new-price">249.00€</div>
+                                </div>
+                                <a href="#" class="cart">
+                            <span class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M1.57883 2C1.92298 2 2.22298 2.23421 2.30644 2.56811L4.25819 10.3751C4.35001 10.7423 4.67999 11 5.05856 11H12.4459C12.801 11 13.1163 10.7728 13.2286 10.4359L15.4286 3.83588C15.6067 3.30167 15.209 2.75 14.6459 2.75H3.89808L3.61964 1.63619C3.45269 0.968452 2.85272 0.5 2.16442 0.5H1.25C0.835781 0.5 0.5 0.835793 0.5 1.25C0.5 1.66421 0.835781 2 1.25 2H1.57883ZM5.58558 9.5L4.27308 4.25H13.7094L11.9594 9.5H5.58558Z"/>
+                                <path d="M6.5 14C6.5 14.8284 5.82843 15.5 5 15.5C4.17157 15.5 3.5 14.8284 3.5 14C3.5 13.1716 4.17157 12.5 5 12.5C5.82843 12.5 6.5 13.1716 6.5 14Z"/>
+                                <path d="M14 14C14 14.8284 13.3284 15.5 12.5 15.5C11.6716 15.5 11 14.8284 11 14C11 13.1716 11.6716 12.5 12.5 12.5C13.3284 12.5 14 13.1716 14 14Z"/>
+                            </svg>
+                            </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="pagination">
+                        <li class="arrow-left"><a href="#">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.05719 5.33337L4.86193 1.13812L5.80474 0.195312L11.6095 6.00004L5.80474 11.8048L4.86193 10.862L9.05719 6.66671H0V5.33337H9.05719Z"
+                                      fill="white"/>
+                            </svg>
+                        </a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><span>...</span></li>
+                        <li><a href="#">14</a></li>
+                        <li class="arrow-right"><a href="#">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.05719 5.33337L4.86193 1.13812L5.80474 0.195312L11.6095 6.00004L5.80474 11.8048L4.86193 10.862L9.05719 6.66671H0V5.33337H9.05719Z"
+                                      fill="white"/>
+                            </svg>
+                        </a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ready">
+        <div class="container">
+            <div class="text">
+                <h2>Ready To Play</h2>
+                <p>Ready sets, everything you need to play vinyl</p>
+                <a href="#" class="btn-accent">Explore Now</a>
+            </div>
+
+            <div class="image">
+                <img src="img/img-bg3.png" alt="Vinyl record album cover">
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<footer>
+    <div class="footer__top">
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                <svg width="174" height="40" viewBox="0 0 174 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.2183 11.2273C37.2183 13.113 34.2725 14.7687 31.6332 14.7687C29.48 14.7687 28.4504 13.4918 28.4504 12.5104C28.4504 10.5857 31.866 8.87689 34.1786 8.9854C36.2132 9.08086 37.2183 10.0649 37.2183 11.2273Z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M26.5251 24.3793C38.576 24.3793 54.763 15.7182 54.763 9.30262C54.763 4.34209 51.4114 0 39.3605 0C27.3095 0 11.1226 7.05716 11.1226 15.3974C11.1226 19.5676 15.615 24.3793 26.5251 24.3793ZM28.1295 20.5299C39.0396 20.5299 51.2163 13.4643 51.2163 8.23054C51.2163 4.49092 47.7711 2.25771 39.3605 1.95058C30.0548 1.61077 14.9732 9.30262 14.9732 14.4858C14.9732 17.6429 19.2292 20.5299 28.1295 20.5299Z"/>
+                    <path d="M2.5103 10.8374L23.5541 32.515L65.6417 9.50261L68.0451 11.2112L22.6461 38.4936L0 12.0121L2.5103 10.8374Z"/>
+                    <path d="M54.1674 23.7788V36.5689H56.3956V31.2876H59.3786C61.5529 31.2876 62.056 32.0062 62.1818 34.0181C62.2537 35.2037 62.2717 36.0839 62.5951 36.5689H65.0031C64.4819 35.9941 64.446 34.9163 64.3202 33.3894C64.2124 32.078 64.0507 30.8385 62.4154 30.4792C63.7632 30.0122 64.5358 28.8805 64.5358 27.3356C64.5358 24.6949 62.5233 23.7788 60.2231 23.7788H54.1674ZM56.3956 25.6111H59.6481C60.9958 25.6111 62.3076 25.8805 62.3076 27.5691C62.3076 29.4014 60.8341 29.617 59.3606 29.617H56.3956V25.6111Z"/>
+                    <path d="M74.3311 33.6768H72.3724C71.9591 34.8624 71.2942 35.3654 70.1621 35.3654C68.5808 35.3654 67.6644 34.3055 67.6105 32.4373H74.4569V32.2217C74.4569 29.0242 72.7677 27.0302 70.0543 27.0302C67.4487 27.0302 65.5619 29.132 65.5619 32.0421C65.5619 34.8085 67.269 36.8743 70.1262 36.8743C72.2107 36.8743 73.8639 35.7067 74.3311 33.6768ZM72.4083 31.072H67.6464C67.8441 29.4374 68.6886 28.5571 70.0364 28.5571C71.3841 28.5571 72.2826 29.5092 72.4083 31.072Z"/>
+                    <path d="M82.8247 29.9942C82.8247 27.8925 81.0636 27.0302 78.9432 27.0302C76.5712 27.0302 75.1517 28.0721 75.1517 29.8326C75.1517 31.8265 76.8228 32.096 78.9432 32.6169C80.1113 32.9043 81.1535 33.066 81.1535 34.0001C81.1535 34.8265 80.3628 35.3474 79.1589 35.3474C77.883 35.3474 77.0205 34.8265 76.9127 33.6049H74.954C75.0618 35.7246 76.4994 36.8384 79.1229 36.8384C81.6027 36.8384 83.1661 35.6528 83.1661 33.7846C83.1661 31.7367 81.1894 31.3235 79.5722 30.9463C78.0807 30.605 77.2002 30.5331 77.2002 29.599C77.2002 28.9164 77.8111 28.5212 78.8534 28.5212C79.9495 28.5212 80.7222 28.8625 80.866 29.9942H82.8247Z"/>
+                    <path d="M86.2129 27.2997H84.2902V40H86.3207V35.3474C87.0575 36.3713 88.0817 36.8025 89.3396 36.8025C91.8374 36.8025 93.4546 34.8983 93.4546 31.9702C93.4546 28.9703 91.8014 27.0302 89.2318 27.0302C88.0278 27.0302 86.8598 27.4973 86.2129 28.5392V27.2997ZM88.8185 28.6829C90.3998 28.6829 91.3881 29.9583 91.3881 31.9702C91.3881 33.9462 90.4178 35.1678 88.8544 35.1678C87.2192 35.1678 86.2488 33.9462 86.2488 31.9343C86.2488 29.9044 87.2012 28.6829 88.8185 28.6829Z"/>
+                    <path d="M103.002 33.6768H101.044C100.63 34.8624 99.9655 35.3654 98.8334 35.3654C97.2521 35.3654 96.3357 34.3055 96.2818 32.4373H103.128V32.2217C103.128 29.0242 101.439 27.0302 98.7256 27.0302C96.12 27.0302 94.2332 29.132 94.2332 32.0421C94.2332 34.8085 95.9403 36.8743 98.7975 36.8743C100.882 36.8743 102.535 35.7067 103.002 33.6768ZM101.08 31.072H96.3177C96.5154 29.4374 97.3599 28.5571 98.7077 28.5571C100.055 28.5571 100.954 29.5092 101.08 31.072Z"/>
+                    <path d="M112.556 33.066H110.544C110.328 34.4313 109.519 35.1857 108.297 35.1857C106.734 35.1857 105.818 33.9642 105.818 31.9163C105.818 29.8505 106.788 28.5931 108.369 28.5931C109.483 28.5931 110.22 29.2397 110.454 30.4074H112.484C112.251 28.2697 110.723 27.0123 108.351 27.0123C105.53 27.0123 103.733 28.9703 103.733 32.0241C103.733 34.8265 105.476 36.8025 108.297 36.8025C110.615 36.8025 112.269 35.3474 112.556 33.066Z"/>
+                    <path d="M118.121 27.2997H116.252V24.5153H114.203V27.2997H112.658V28.7907H114.203V33.2097C114.203 35.3115 114.042 36.6588 116.737 36.6588C117.258 36.6588 117.51 36.6588 118.121 36.5869V34.9702C117.815 35.0061 117.6 35.0061 117.312 35.0061C116.234 35.0061 116.252 34.557 116.252 33.6768V28.7907H118.121V27.2997Z"/>
+                    <path d="M123.805 23.7788V36.5689H126.051V31.6469H129.663C132.251 31.6469 133.814 30.102 133.814 27.6769C133.814 25.0003 131.999 23.7788 129.358 23.7788H123.805ZM126.051 25.647H128.98C130.4 25.647 131.622 26.0781 131.622 27.7308C131.622 29.2397 130.633 29.8326 129.178 29.8326H126.051V25.647Z"/>
+                    <path d="M136.994 23.7788H134.964V36.5689H136.994V31.593C136.994 30.0302 137.587 28.7727 139.259 28.7727C140.786 28.7727 141.056 29.7068 141.056 30.9463V36.5689H143.122V30.2816C143.122 28.144 141.9 27.0661 139.924 27.0661C138.648 27.0661 137.659 27.5871 136.994 28.5751V23.7788Z"/>
+                    <path d="M149.02 27.0302C146.145 27.0302 144.294 28.9523 144.294 31.9343C144.294 34.9522 146.127 36.8564 149.02 36.8564C151.859 36.8564 153.656 34.9522 153.656 31.9343C153.656 28.9344 151.859 27.0302 149.02 27.0302ZM148.984 28.6469C150.601 28.6469 151.59 29.8864 151.59 31.9163C151.59 34.0001 150.619 35.2576 149.002 35.2576C147.349 35.2576 146.361 34.0181 146.361 31.9343C146.361 29.9044 147.367 28.6469 148.984 28.6469Z"/>
+                    <path d="M156.797 27.2997H154.856V36.5689H156.905V31.575C156.905 29.4374 157.929 28.7547 159.169 28.7547C160.804 28.7547 160.966 29.9044 160.966 31.1798V36.5689H163.014V30.3894C163.014 28.2877 162.008 27.0482 159.87 27.0482C158.486 27.0482 157.569 27.5512 156.797 28.6649V27.2997Z"/>
+                    <path d="M168.912 27.0302C166.037 27.0302 164.186 28.9523 164.186 31.9343C164.186 34.9522 166.019 36.8564 168.912 36.8564C171.751 36.8564 173.548 34.9522 173.548 31.9343C173.548 28.9344 171.751 27.0302 168.912 27.0302ZM168.876 28.6469C170.494 28.6469 171.482 29.8864 171.482 31.9163C171.482 34.0001 170.512 35.2576 168.894 35.2576C167.241 35.2576 166.253 34.0181 166.253 31.9343C166.253 29.9044 167.259 28.6469 168.876 28.6469Z"/>
+                </svg>
+            </a>
+
+            <div class="footer__top-center">
+                <div class="box box-products">
+                    <h4>Products</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Cartridges</a></li>
+                        <li><a href="#">Tonearms</a></li>
+                        <li><a href="#">Turntables</a></li>
+                        <li><a href="#">Belts</a></li>
+                        <li><a href="#">Phono Preamplifier</a></li>
+                        <li><a href="#">Replacement Styluses</a></li>
+                        <li><a href="#">Accessories </a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h4>Services</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h4>Company</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__top-right">
+                <p>Vintage turntables restoration,
+                   upgrade and online store</p>
+                <a href="index.html" class="logo">
+                    <svg width="216" height="60" viewBox="0 0 216 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M57 29C57 44.464 44.464 57 29 57C13.536 57 1 44.464 1 29C1 13.536 13.536 1 29 1C44.464 1 57 13.536 57 29ZM8.41155 14.8144L26.326 53.8587C13.7762 52.5242 4 41.9038 4 29C4 23.7321 5.62934 18.8448 8.41155 14.8144ZM28 18.2064V50.3133L11.6187 14.6106L28 18.2064ZM29.5 15.4643L46.9779 11.6277C42.4321 6.92446 36.0576 4 29 4C22.0333 4 15.7322 6.84965 11.1986 11.4469L29.5 15.4643ZM31 18.2064V50.3133L47.3813 14.6106L31 18.2064ZM32.7364 53.7227C44.7712 51.9191 54 41.5373 54 29C54 24.1159 52.5994 19.559 50.1781 15.7089L32.7364 53.7227Z"/>
+                        <path d="M71.1836 23.2031L74.875 33.0117L78.5576 23.2031H81.4316V36H79.2168V31.7812L79.4365 26.1387L75.6572 36H74.0664L70.2959 26.1475L70.5156 31.7812V36H68.3008V23.2031H71.1836Z"/>
+                        <path d="M83.6419 31.1572C83.6419 30.2256 83.8265 29.3877 84.1956 28.6436C84.5648 27.8936 85.0833 27.3193 85.7513 26.9209C86.4193 26.5166 87.1868 26.3145 88.054 26.3145C89.3372 26.3145 90.3773 26.7275 91.1741 27.5537C91.9769 28.3799 92.4105 29.4756 92.4749 30.8408L92.4837 31.3418C92.4837 32.2793 92.3021 33.1172 91.9388 33.8555C91.5814 34.5938 91.0657 35.165 90.3919 35.5693C89.7239 35.9736 88.9505 36.1758 88.0716 36.1758C86.7298 36.1758 85.6546 35.7305 84.846 34.8398C84.0433 33.9434 83.6419 32.751 83.6419 31.2627V31.1572ZM85.7777 31.3418C85.7777 32.3203 85.9798 33.0879 86.3841 33.6445C86.7884 34.1953 87.3509 34.4707 88.0716 34.4707C88.7923 34.4707 89.3519 34.1895 89.7503 33.627C90.1546 33.0645 90.3568 32.2412 90.3568 31.1572C90.3568 30.1963 90.1488 29.4346 89.7327 28.8721C89.3226 28.3096 88.763 28.0283 88.054 28.0283C87.3568 28.0283 86.803 28.3066 86.3929 28.8633C85.9827 29.4141 85.7777 30.2402 85.7777 31.3418Z"/>
+                        <path d="M96.4518 26.4902L96.5133 27.5889C97.2164 26.7393 98.1393 26.3145 99.2819 26.3145C101.262 26.3145 102.27 27.4482 102.305 29.7158V36H100.17V29.8389C100.17 29.2354 100.038 28.79 99.7741 28.5029C99.5163 28.21 99.0914 28.0635 98.4996 28.0635C97.6383 28.0635 96.9967 28.4531 96.5748 29.2324V36H94.4391V26.4902H96.4518Z"/>
+                        <path d="M104.269 31.1572C104.269 30.2256 104.454 29.3877 104.823 28.6436C105.192 27.8936 105.711 27.3193 106.379 26.9209C107.047 26.5166 107.814 26.3145 108.682 26.3145C109.965 26.3145 111.005 26.7275 111.802 27.5537C112.604 28.3799 113.038 29.4756 113.103 30.8408L113.111 31.3418C113.111 32.2793 112.93 33.1172 112.566 33.8555C112.209 34.5938 111.693 35.165 111.019 35.5693C110.352 35.9736 109.578 36.1758 108.699 36.1758C107.357 36.1758 106.282 35.7305 105.474 34.8398C104.671 33.9434 104.269 32.751 104.269 31.2627V31.1572ZM106.405 31.3418C106.405 32.3203 106.607 33.0879 107.012 33.6445C107.416 34.1953 107.978 34.4707 108.699 34.4707C109.42 34.4707 109.979 34.1895 110.378 33.627C110.782 33.0645 110.984 32.2412 110.984 31.1572C110.984 30.1963 110.776 29.4346 110.36 28.8721C109.95 28.3096 109.391 28.0283 108.682 28.0283C107.984 28.0283 107.431 28.3066 107.02 28.8633C106.61 29.4141 106.405 30.2402 106.405 31.3418Z"/>
+                        <path d="M117.106 26.4902L117.167 27.4834C117.835 26.7041 118.749 26.3145 119.909 26.3145C121.181 26.3145 122.051 26.8008 122.52 27.7734C123.211 26.8008 124.184 26.3145 125.438 26.3145C126.487 26.3145 127.266 26.6045 127.776 27.1846C128.291 27.7646 128.555 28.6201 128.567 29.751V36H126.431V29.8125C126.431 29.209 126.299 28.7666 126.035 28.4854C125.772 28.2041 125.335 28.0635 124.726 28.0635C124.24 28.0635 123.841 28.1953 123.531 28.459C123.226 28.7168 123.012 29.0566 122.889 29.4785L122.898 36H120.762V29.7422C120.733 28.623 120.161 28.0635 119.048 28.0635C118.193 28.0635 117.586 28.4121 117.229 29.1094V36H115.093V26.4902H117.106Z"/>
+                        <path d="M135.128 36.1758C133.774 36.1758 132.675 35.751 131.832 34.9014C130.994 34.0459 130.575 32.9092 130.575 31.4912V31.2275C130.575 30.2783 130.756 29.4316 131.12 28.6875C131.489 27.9375 132.004 27.3545 132.667 26.9385C133.329 26.5225 134.067 26.3145 134.881 26.3145C136.176 26.3145 137.175 26.7275 137.879 27.5537C138.588 28.3799 138.942 29.5488 138.942 31.0605V31.9219H132.728C132.793 32.707 133.053 33.3281 133.51 33.7852C133.973 34.2422 134.553 34.4707 135.251 34.4707C136.229 34.4707 137.026 34.0752 137.641 33.2842L138.793 34.3828C138.412 34.9512 137.902 35.3936 137.263 35.71C136.63 36.0205 135.919 36.1758 135.128 36.1758ZM134.873 28.0283C134.287 28.0283 133.812 28.2334 133.449 28.6436C133.091 29.0537 132.863 29.625 132.763 30.3574H136.833V30.1992C136.786 29.4844 136.595 28.9453 136.261 28.582C135.927 28.2129 135.464 28.0283 134.873 28.0283Z"/>
+                        <path d="M142.769 26.4902L142.831 27.5889C143.534 26.7393 144.457 26.3145 145.6 26.3145C147.58 26.3145 148.588 27.4482 148.623 29.7158V36H146.487V29.8389C146.487 29.2354 146.355 28.79 146.092 28.5029C145.834 28.21 145.409 28.0635 144.817 28.0635C143.956 28.0635 143.314 28.4531 142.893 29.2324V36H140.757V26.4902H142.769Z"/>
+                        <path d="M153.663 24.1787V26.4902H155.342V28.0723H153.663V33.3809C153.663 33.7441 153.734 34.0078 153.874 34.1719C154.021 34.3301 154.279 34.4092 154.648 34.4092C154.894 34.4092 155.143 34.3799 155.395 34.3213V35.9736C154.908 36.1084 154.44 36.1758 153.989 36.1758C152.348 36.1758 151.528 35.2705 151.528 33.46V28.0723H149.963V26.4902H151.528V24.1787H153.663Z"/>
+                        <path d="M72.8096 52.2139L76.0615 42.2031H78.5049L73.8994 55H71.7461L67.1582 42.2031H69.5928L72.8096 52.2139Z"/>
+                        <path d="M82.2005 55H80.0648V45.4902H82.2005V55ZM79.9329 43.0205C79.9329 42.6924 80.0355 42.4199 80.2405 42.2031C80.4515 41.9863 80.7503 41.8779 81.137 41.8779C81.5238 41.8779 81.8226 41.9863 82.0335 42.2031C82.2445 42.4199 82.3499 42.6924 82.3499 43.0205C82.3499 43.3428 82.2445 43.6123 82.0335 43.8291C81.8226 44.04 81.5238 44.1455 81.137 44.1455C80.7503 44.1455 80.4515 44.04 80.2405 43.8291C80.0355 43.6123 79.9329 43.3428 79.9329 43.0205Z"/>
+                        <path d="M86.6959 45.4902L86.7575 46.5889C87.4606 45.7393 88.3834 45.3145 89.526 45.3145C91.5065 45.3145 92.5143 46.4482 92.5495 48.7158V55H90.4137V48.8389C90.4137 48.2354 90.2819 47.79 90.0182 47.5029C89.7604 47.21 89.3356 47.0635 88.7438 47.0635C87.8825 47.0635 87.2409 47.4531 86.819 48.2324V55H84.6832V45.4902H86.6959Z"/>
+                        <path d="M97.5898 43.1787V45.4902H99.2685V47.0723H97.5898V52.3809C97.5898 52.7441 97.6601 53.0078 97.8007 53.1719C97.9472 53.3301 98.205 53.4092 98.5742 53.4092C98.8203 53.4092 99.0693 53.3799 99.3213 53.3213V54.9736C98.8349 55.1084 98.3662 55.1758 97.915 55.1758C96.2744 55.1758 95.4541 54.2705 95.4541 52.46V47.0723H93.8896V45.4902H95.4541V43.1787H97.5898Z"/>
+                        <path d="M106.77 55C106.676 54.8184 106.594 54.5225 106.524 54.1123C105.844 54.8213 105.012 55.1758 104.028 55.1758C103.073 55.1758 102.293 54.9033 101.69 54.3584C101.086 53.8135 100.784 53.1396 100.784 52.3369C100.784 51.3232 101.159 50.5469 101.909 50.0078C102.665 49.4629 103.743 49.1904 105.144 49.1904H106.453V48.5664C106.453 48.0742 106.316 47.6816 106.04 47.3887C105.765 47.0898 105.346 46.9404 104.783 46.9404C104.297 46.9404 103.899 47.0635 103.588 47.3096C103.278 47.5498 103.122 47.8574 103.122 48.2324H100.987C100.987 47.7109 101.159 47.2246 101.505 46.7734C101.851 46.3164 102.32 45.959 102.911 45.7012C103.509 45.4434 104.174 45.3145 104.907 45.3145C106.02 45.3145 106.908 45.5957 107.57 46.1582C108.232 46.7148 108.572 47.5 108.589 48.5137V52.8027C108.589 53.6582 108.709 54.3408 108.949 54.8506V55H106.77ZM104.423 53.4619C104.845 53.4619 105.241 53.3594 105.61 53.1543C105.985 52.9492 106.266 52.6738 106.453 52.3281V50.5352H105.302C104.511 50.5352 103.916 50.6729 103.518 50.9482C103.119 51.2236 102.92 51.6133 102.92 52.1172C102.92 52.5273 103.055 52.8555 103.324 53.1016C103.6 53.3418 103.966 53.4619 104.423 53.4619Z"/>
+                        <path d="M110.632 50.1748C110.632 48.6982 110.978 47.5205 111.67 46.6416C112.367 45.7568 113.29 45.3145 114.438 45.3145C115.522 45.3145 116.375 45.6924 116.996 46.4482L117.092 45.4902H119.017V54.71C119.017 55.958 118.628 56.9424 117.848 57.6631C117.075 58.3838 116.029 58.7441 114.711 58.7441C114.013 58.7441 113.331 58.5977 112.663 58.3047C112.001 58.0176 111.497 57.6396 111.151 57.1709L112.162 55.8877C112.818 56.667 113.627 57.0566 114.588 57.0566C115.296 57.0566 115.856 56.8633 116.266 56.4766C116.676 56.0957 116.881 55.5332 116.881 54.7891V54.1475C116.266 54.833 115.446 55.1758 114.421 55.1758C113.307 55.1758 112.396 54.7334 111.687 53.8486C110.984 52.9639 110.632 51.7393 110.632 50.1748ZM112.759 50.3594C112.759 51.3145 112.953 52.0674 113.339 52.6182C113.732 53.1631 114.274 53.4355 114.965 53.4355C115.827 53.4355 116.465 53.0664 116.881 52.3281V48.1445C116.477 47.4238 115.844 47.0635 114.983 47.0635C114.28 47.0635 113.732 47.3418 113.339 47.8984C112.953 48.4551 112.759 49.2754 112.759 50.3594Z"/>
+                        <path d="M125.587 55.1758C124.233 55.1758 123.135 54.751 122.291 53.9014C121.453 53.0459 121.034 51.9092 121.034 50.4912V50.2275C121.034 49.2783 121.216 48.4316 121.579 47.6875C121.948 46.9375 122.464 46.3545 123.126 45.9385C123.788 45.5225 124.526 45.3145 125.341 45.3145C126.636 45.3145 127.635 45.7275 128.338 46.5537C129.047 47.3799 129.401 48.5488 129.401 50.0605V50.9219H123.187C123.252 51.707 123.513 52.3281 123.97 52.7852C124.433 53.2422 125.013 53.4707 125.71 53.4707C126.688 53.4707 127.485 53.0752 128.101 52.2842L129.252 53.3828C128.871 53.9512 128.361 54.3936 127.723 54.71C127.09 55.0205 126.378 55.1758 125.587 55.1758ZM125.332 47.0283C124.746 47.0283 124.271 47.2334 123.908 47.6436C123.551 48.0537 123.322 48.625 123.223 49.3574H127.292V49.1992C127.245 48.4844 127.055 47.9453 126.721 47.582C126.387 47.2129 125.924 47.0283 125.332 47.0283Z"/>
+                        <path d="M144.835 43.9961H140.844V55H138.638V43.9961H134.683V42.2031H144.835V43.9961Z"/>
+                        <path d="M151.677 54.0684C151.05 54.8066 150.159 55.1758 149.005 55.1758C147.974 55.1758 147.191 54.874 146.658 54.2705C146.131 53.667 145.867 52.7939 145.867 51.6514V45.4902H148.003V51.625C148.003 52.832 148.504 53.4355 149.506 53.4355C150.543 53.4355 151.243 53.0635 151.606 52.3193V45.4902H153.742V55H151.729L151.677 54.0684Z"/>
+                        <path d="M161.076 47.4414C160.795 47.3945 160.505 47.3711 160.206 47.3711C159.228 47.3711 158.569 47.7461 158.229 48.4961V55H156.093V45.4902H158.132L158.185 46.5537C158.7 45.7275 159.415 45.3145 160.329 45.3145C160.634 45.3145 160.886 45.3555 161.085 45.4375L161.076 47.4414Z"/>
+                        <path d="M164.587 45.4902L164.649 46.5889C165.352 45.7393 166.275 45.3145 167.418 45.3145C169.398 45.3145 170.406 46.4482 170.441 48.7158V55H168.305V48.8389C168.305 48.2354 168.173 47.79 167.91 47.5029C167.652 47.21 167.227 47.0635 166.635 47.0635C165.774 47.0635 165.132 47.4531 164.71 48.2324V55H162.575V45.4902H164.587Z"/>
+                        <path d="M178.487 55C178.393 54.8184 178.311 54.5225 178.241 54.1123C177.561 54.8213 176.729 55.1758 175.745 55.1758C174.79 55.1758 174.011 54.9033 173.407 54.3584C172.804 53.8135 172.502 53.1396 172.502 52.3369C172.502 51.3232 172.877 50.5469 173.627 50.0078C174.383 49.4629 175.461 49.1904 176.861 49.1904H178.171V48.5664C178.171 48.0742 178.033 47.6816 177.758 47.3887C177.482 47.0898 177.063 46.9404 176.501 46.9404C176.014 46.9404 175.616 47.0635 175.306 47.3096C174.995 47.5498 174.84 47.8574 174.84 48.2324H172.704C172.704 47.7109 172.877 47.2246 173.223 46.7734C173.568 46.3164 174.037 45.959 174.629 45.7012C175.226 45.4434 175.891 45.3145 176.624 45.3145C177.737 45.3145 178.625 45.5957 179.287 46.1582C179.949 46.7148 180.289 47.5 180.306 48.5137V52.8027C180.306 53.6582 180.427 54.3408 180.667 54.8506V55H178.487ZM176.14 53.4619C176.562 53.4619 176.958 53.3594 177.327 53.1543C177.702 52.9492 177.983 52.6738 178.171 52.3281V50.5352H177.019C176.228 50.5352 175.634 50.6729 175.235 50.9482C174.837 51.2236 174.638 51.6133 174.638 52.1172C174.638 52.5273 174.772 52.8555 175.042 53.1016C175.317 53.3418 175.683 53.4619 176.14 53.4619Z"/>
+                        <path d="M191.069 50.3418C191.069 51.8184 190.737 52.9932 190.075 53.8662C189.419 54.7393 188.514 55.1758 187.36 55.1758C186.246 55.1758 185.379 54.7744 184.758 53.9717L184.653 55H182.719V41.5H184.855V46.4043C185.47 45.6777 186.299 45.3145 187.342 45.3145C188.502 45.3145 189.413 45.7451 190.075 46.6064C190.737 47.4678 191.069 48.6719 191.069 50.2188V50.3418ZM188.933 50.1572C188.933 49.126 188.751 48.3525 188.388 47.8369C188.025 47.3213 187.497 47.0635 186.806 47.0635C185.88 47.0635 185.23 47.4678 184.855 48.2764V52.1963C185.236 53.0225 185.892 53.4355 186.823 53.4355C187.491 53.4355 188.007 53.1865 188.37 52.6885C188.734 52.1904 188.921 51.4375 188.933 50.4297V50.1572Z"/>
+                        <path d="M195.318 55H193.182V41.5H195.318V55Z"/>
+                        <path d="M202.019 55.1758C200.666 55.1758 199.567 54.751 198.723 53.9014C197.886 53.0459 197.467 51.9092 197.467 50.4912V50.2275C197.467 49.2783 197.648 48.4316 198.012 47.6875C198.381 46.9375 198.896 46.3545 199.558 45.9385C200.221 45.5225 200.959 45.3145 201.773 45.3145C203.068 45.3145 204.067 45.7275 204.77 46.5537C205.479 47.3799 205.834 48.5488 205.834 50.0605V50.9219H199.62C199.684 51.707 199.945 52.3281 200.402 52.7852C200.865 53.2422 201.445 53.4707 202.142 53.4707C203.121 53.4707 203.918 53.0752 204.533 52.2842L205.684 53.3828C205.304 53.9512 204.794 54.3936 204.155 54.71C203.522 55.0205 202.81 55.1758 202.019 55.1758ZM201.764 47.0283C201.179 47.0283 200.704 47.2334 200.341 47.6436C199.983 48.0537 199.755 48.625 199.655 49.3574H203.724V49.1992C203.678 48.4844 203.487 47.9453 203.153 47.582C202.819 47.2129 202.356 47.0283 201.764 47.0283Z"/>
+                        <path d="M213.01 52.416C213.01 52.0352 212.852 51.7451 212.535 51.5459C212.225 51.3467 211.706 51.1709 210.98 51.0186C210.253 50.8662 209.647 50.6729 209.16 50.4385C208.094 49.9229 207.561 49.1758 207.561 48.1973C207.561 47.377 207.906 46.6914 208.598 46.1406C209.289 45.5898 210.168 45.3145 211.234 45.3145C212.371 45.3145 213.288 45.5957 213.985 46.1582C214.689 46.7207 215.04 47.4502 215.04 48.3467H212.904C212.904 47.9365 212.752 47.5967 212.447 47.3271C212.143 47.0518 211.738 46.9141 211.234 46.9141C210.766 46.9141 210.382 47.0225 210.083 47.2393C209.79 47.4561 209.644 47.7461 209.644 48.1094C209.644 48.4375 209.781 48.6924 210.057 48.874C210.332 49.0557 210.889 49.2402 211.727 49.4277C212.565 49.6094 213.221 49.8291 213.695 50.0869C214.176 50.3389 214.53 50.6436 214.759 51.001C214.993 51.3584 215.11 51.792 215.11 52.3018C215.11 53.1572 214.756 53.8516 214.047 54.3848C213.338 54.9121 212.409 55.1758 211.261 55.1758C210.482 55.1758 209.787 55.0352 209.178 54.7539C208.568 54.4727 208.094 54.0859 207.754 53.5938C207.414 53.1016 207.244 52.5713 207.244 52.0029H209.318C209.348 52.5068 209.538 52.8965 209.89 53.1719C210.241 53.4414 210.707 53.5762 211.287 53.5762C211.85 53.5762 212.277 53.4707 212.57 53.2598C212.863 53.043 213.01 52.7617 213.01 52.416Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="container">
+            <p>Respect Phono © 2025</p>
+            <ul class="text">
+                <li><a href="#">Terms & Conditions |</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<div class="basket__popup popup">
+    <div class="popup-header">
+        <span class="close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"/>
+            </svg>
+        </span>
+
+        <div class="basket__popup-title">Added to Cart</div>
+    </div>
+
+    <div class="popup-body">
+        <div class="card-list">
+            <a href="#" class="image"><img src="img/prod6.png" alt="Vinyl record album cover"></a>
+            <div class="card-body">
+                <a href="#" class="title">Ortofon MC Windfeld Ti Heritage</a>
+                <div class="card__bottom">
+                    <p>Qty: <span>1</span></p>
+                    <p>Price: <span>3649.00€</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-list">
+            <a href="#" class="image"><img src="img/prod7.png" alt="Vinyl record album cover"></a>
+            <div class="card-body">
+                <a href="#" class="title">Ortofon MC Windfeld Ti Heritage</a>
+                <div class="card__bottom">
+                    <p>Qty: <span>1</span></p>
+                    <p>Price: <span>3649.00€</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-list">
+            <a href="#" class="image"><img src="img/prod2.png" alt="Vinyl record album cover"></a>
+            <div class="card-body">
+                <a href="#" class="title">Ortofon MC Windfeld Ti Heritage</a>
+                <div class="card__bottom">
+                    <p>Qty: <span>1</span></p>
+                    <p>Price: <span>3649.00€</span></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="popup-footer">
+        <div class="card-total">
+            Total: 3649€
+        </div>
+
+        <div class="button-group">
+            <a href="#" class="btn-accent">Checkout</a>
+            <a href="#" class="btn-default">Go to cart</a>
+            <a href="#" class="btn-default">Continue shopping</a>
+        </div>
+    </div>
+</div>
+
+<div id="overlay"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/jquery.equalheights.min.js"></script>
+
+</body>
+</html>
